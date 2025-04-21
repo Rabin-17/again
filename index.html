@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Riyaj Timalsina">
+    
+    <!-- IMPORTING CUSTOM STYLES. -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- ICON. -->
+    <link rel="icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIG4RZLQCCvYzUOzCLUpTWsSgLYhZJwhfxbw&s" />
+    <title>Riyaj | Profile</title>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="nav">
+        <!-- NAV CONTENTS -->
+        <section class="nav-contents">
+            <!-- NAV TITLE -->
+            <div class="nav-title" onclick="location.reload()">
+                &lt;RIYAJ/&gt;
+            </div>
+            <!-- NAV ITEMS -->
+            <div class="nav-items" id="nav-items">
+                <a href="#about">ABOUT</a>
+                <a href="#experience">EXPERIENCE</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#awards">AWARDS & CERTIFICATIONS</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+            <!-- HAMBURGER ICON -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </section>
+    </nav>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <!-- ABOUT CONTENTS -->
+        <section class="about-contents">
+            <!-- TEXTUAL DETAILS -->
+            <article class="about-description">
+                <h1>RIYAJ TIMALSINA</h1>
+                <h3>BCA | WEB | UI/UX</h3>
+                <p>
+                    A passionate BCA student with expertise in web development and UI/UX design, focused on creating user-friendly digital experiences.
+                <blockquote><strong>Skills:</strong> HTML, CSS, JavaScript, React, Python, PHP, UI/UX Design, Responsive Web Development, Database Management</blockquote>
+                </p>
+            </article>
+            <!-- IMAGE -->
+            <div class="about-image" id="profile-image"></div>
+        </section>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+        <!-- EXPERIENCE CONTENTS -->
+        <section class="experience-contents">
+            <section id="contents-left">
+                <h2 class="contents-title">EXPERIENCE</h2>
+                <section class="experience-items">
+                    <!-- EXPEIRENCE #1 (SET IN DECENDING ORDER) -->
+                    <div id="exp-1" class="active" onclick="showExp('exp-1-content')">
+                        <h3>Tech Innovation Nepal</h3>
+                        <p>Web Developer Intern | 2024 - Ongoing</p>
+                    </div>
+                    <!-- EXPEIRENCE #2 -->
+                    <div id="exp-2" onclick="showExp('exp-2-content')">
+                        <h3>National Hackathon 2023</h3>
+                        <p>Team Lead | 2023</p>
+                    </div>
+                    <!-- EXPEIRENCE #3 -->
+                    <div id="exp-3" onclick="showExp('exp-3-content')">
+                        <h3>IT Club of Himalaya College</h3>
+                        <p>Technical Lead | 2022 - 2023</p>
+                    </div>
+                    <!-- ADDITIONAL EXPERIENCES -->
+                    <div id="exp-4" onclick="showExp('exp-4-content')">
+                        <h3>TechFest 2022</h3>
+                        <p>Event Organizer | 2022</p>
+                    </div>
+                    <div id="exp-5" onclick="showExp('exp-5-content')">
+                        <h3>College Coding Club</h3>
+                        <p>Member | 2021 - Ongoing</p>
+                    </div>
+                </section>
+            </section>
+            <section id="exp-contents-right">
+                <!-- RESPECTIVE CONTENT OF EXPERIENCE #1 -->
+                <div id="exp-1-content">
+                    <h2>Tech Innovation Nepal</h2>
+                    <i>Web Developer Intern | 2024 - Ongoing</i>
+                    <hr />
+                    <p>
+                        Working on full-stack web development projects using React, Node.js, and MongoDB. Collaborating with a team of developers to create responsive and user-friendly web applications for various clients.
+                    </p>
+                </div>
+                <!-- RESPECTIVE CONTENT OF EXPERIENCE #2 -->
+                <div id="exp-2-content" style="display: none;">
+                    <h2>National Hackathon 2023</h2>
+                    <i>Team Lead | 2023</i>
+                    <hr />
+                    <p>
+                        Led a team of four developers to create an innovative solution for addressing local transportation challenges. Our project "CommuteSmart" won the second prize in the competition.
+                        <a href="#">Project Link</a>
+                    </p>
+                </div>
+                <!-- RESPECTIVE CONTENT OF EXPERIENCE #3 -->
+                <div id="exp-3-content" style="display: none;">
+                    <h2>IT Club of Himalaya College</h2>
+                    <i>Technical Lead | 2022 - 2023</i>
+                    <hr />
+                    <p>
+                        Managed technical workshops and events for BCA students. Organized coding competitions, web development seminars, and tech talks to enhance peer learning.
+                    </p>
+                </div>
+                <!-- RESPECTIVE CONTENT OF EXPERIENCE #4 -->
+                <div id="exp-4-content" style="display: none;">
+                    <h2>TechFest 2022</h2>
+                    <i>Event Organizer | 2022</i>
+                    <hr />
+                    <p>
+                        Helped organize the annual technology festival at Himalaya College. Coordinated workshops on emerging technologies and managed the web development competition.
+                    </p>
+                </div>
+                <!-- RESPECTIVE CONTENT OF EXPERIENCE #5 -->
+                <div id="exp-5-content" style="display: none;">
+                    <h2>College Coding Club</h2>
+                    <i>Member | 2021 - Ongoing</i>
+                    <hr />
+                    <p>
+                        Active participant in weekly coding challenges and collaborative projects. Contributed to open-source projects and mentored junior members in programming concepts.
+                    </p>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <!-- PROJECTS CONTENTS. -->
+        <section class="projects-contents">
+            <h2 class="contents-title">PROJECTS</h2>
+            <section class="project-items">
+                <!-- PROJECT #1 -->
+                <div id="project-1">
+                    <h2>CommuteSmart</h2>
+                    <blockquote>React, Node.js, MongoDB | 2023</blockquote>
+                    <p>
+                        A web-based application to optimize local transportation routes and reduce commuting time for daily travelers.
+                    </p>
+                    <p><a href="#">GitHub Repository</a></p>
+                </div>
+                <!-- PROJECT #2 -->
+                <div id="project-2">
+                    <h2>College Management System</h2>
+                    <blockquote>PHP, MySQL, Bootstrap | 2023</blockquote>
+                    <p>
+                        Comprehensive management system for educational institutions with modules for student records, attendance, and course management.
+                    </p>
+                    <p><a href="#">Demo Link</a></p>
+                </div>
+                <!-- PROJECT #3 -->
+                <div id="project-3">
+                    <h2>NepalTravel</h2>
+                    <blockquote>Figma, HTML, CSS, JS | 2022</blockquote>
+                    <p>
+                        Designed and developed a tourism website showcasing Nepal's cultural heritage and travel destinations.
+                    </p>
+                    <p><a href="#">Website</a></p>
+                </div>
+                <!-- ADDITIONAL PROJECTS -->
+                <div id="project-4">
+                    <h2>E-Learning Platform</h2>
+                    <blockquote>React, Firebase | 2022</blockquote>
+                    <p>
+                        An interactive platform for students to access course materials, submit assignments, and track their progress online.
+                    </p>
+                    <p><a href="#">Project Details</a></p>
+                </div>
+                <div id="project-5">
+                    <h2>Weather App</h2>
+                    <blockquote>JavaScript, Weather API | 2021</blockquote>
+                    <p>
+                        A simple weather application that displays current weather conditions and forecasts based on user location.
+                    </p>
+                    <p><a href="#">Live Demo</a></p>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <!-- AWARDS & CERTIFICATIONS -->
+    <section id="awards">
+        <!-- AWARDS CONTENTS -->
+        <section class="awards-contents">
+            <section id="contents-left">
+                <h2 class="contents-title">AWARDS & CERTIFICATIONS</h2>
+                <section class="awards-items">
+                    <!-- AWARDS #1 -->
+                    <div id="awards-1" class="active" onclick="showAwards('awards-1-content')">
+                        <h3>Full Stack Web Development</h3>
+                        <p>Udemy | 2023</p>
+                    </div>
+                    <!-- AWARDS #2 -->
+                    <div id="awards-2" onclick="showAwards('awards-2-content')">
+                        <h3>National Hackathon Runner-up</h3>
+                        <p>Tech Nepal | 2023</p>
+                    </div>
+                    <!-- AWARDS #3 -->
+                    <div id="awards-3" onclick="showAwards('awards-3-content')">
+                        <h3>Python Programming</h3>
+                        <p>Coursera | 2022</p>
+                    </div>
+                    <!-- ADDITIONAL AWARDS -->
+                    <div id="awards-4" onclick="showAwards('awards-4-content')">
+                        <h3>UI/UX Design Fundamentals</h3>
+                        <p>Google | 2022</p>
+                    </div>
+                    <div id="awards-5" onclick="showAwards('awards-5-content')">
+                        <h3>Academic Excellence Award</h3>
+                        <p>Himalaya College | 2021</p>
+                    </div>
+                </section>
+            </section>
+            <section id="awards-contents-right">
+                <!-- RESPECTIVE CONTENT OF AWARDS #1 -->
+                <div id="awards-1-content">
+                    <h2>Full Stack Web Development</h2>
+                    <i>Udemy | 2023</i>
+                    <hr />
+                    <p>
+                        Completed comprehensive course covering HTML, CSS, JavaScript, React, Node.js, and MongoDB.
+                        <a href="#">Certificate</a>
+                    </p>
+                </div>
+                <!-- RESPECTIVE CONTENT OF AWARDS #2 -->
+                <div id="awards-2-content" style="display: none;">
+                    <h2>National Hackathon Runner-up</h2>
+                    <i>Tech Nepal | 2023</i>
+                    <hr />
+                    <p>
+                        Received second prize for developing an innovative solution to address local transportation challenges.
+                        <a href="#">Recognition</a>
+                    </p>
+                </div>
+                <!-- RESPECTIVE CONTENT OF AWARDS #3 -->
+                <div id="awards-3-content" style="display: none;">
+                    <h2>Python Programming</h2>
+                    <i>Coursera | 2022</i>
+                    <hr />
+                    <p>
+                        Mastered Python programming fundamentals, data structures, and algorithms through practical projects.
+                        <a href="#">Certificate</a>
+                    </p>
+                </div>
+                <!-- RESPECTIVE CONTENT OF AWARDS #4 -->
+                <div id="awards-4-content" style="display: none;">
+                    <h2>UI/UX Design Fundamentals</h2>
+                    <i>Google | 2022</i>
+                    <hr />
+                    <p>
+                        Learned principles of user-centered design, wireframing, prototyping, and usability testing.
+                        <a href="#">Certificate</a>
+                    </p>
+                </div>
+                <!-- RESPECTIVE CONTENT OF AWARDS #5 -->
+                <div id="awards-5-content" style="display: none;">
+                    <h2>Academic Excellence Award</h2>
+                    <i>Himalaya College | 2021</i>
+                    <hr />
+                    <p>
+                        Awarded for outstanding academic performance in first year of Bachelor of Computer Applications (BCA).
+                    </p>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <!-- FOOTER/CONTACT -->
+    <footer id="contact">
+        <!-- FOOTER/CONTACT CONTENTS -->
+        <section class="contact-contents">
+            <!-- FOOTER/CONTACT LINKS -->
+            <div class="contact-links">
+                <h3>LINKS</h3>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#awards">Awards & Certifications</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <!-- FOOTER/CONTACT CONNECT -->
+            <div class="contact-connect">
+                <h3>CONNECT</h3>
+                <a href="#">Github</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
+            </div>
+            <!-- FOOTER/CONTACT CONTACT -->
+            <div>
+                <h3>CONTACT</h3>
+                <a href="mailto:riyaj.timalsina@example.com">Email Me</a>
+                <a href="tel:+9779876543210">Call Me</a>
+            </div>
+        </section>
+    </footer>
+
+    <!-- IMPORTING CUSTOM SCRIPT. -->
+    <script src="script.js"></script>
+</body>
+
+</html>
